@@ -9,6 +9,8 @@ Installing:
   - launch create_database.py (this will create SQLite persona.db file)
   - launch insert_admin.py (this will add credits for admin)
 
+To launch app launch Persona_1.0.pyw
+
 Login: admin
 
 Password: 111
