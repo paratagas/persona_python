@@ -1,0 +1,1961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_window</class>
+ <widget class="QWidget" name="main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>782</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Персона_1.0</string>
+  </property>
+  <widget class="QTabWidget" name="allTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>-3</x>
+     <y>-2</y>
+     <width>791</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_input">
+    <attribute name="title">
+     <string>Ввести данные</string>
+    </attribute>
+    <widget class="QGroupBox" name="pers_input_group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>411</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Личные данные</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>130</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="name_input_label">
+         <property name="text">
+          <string>Имя (рус)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sur_input_label">
+         <property name="text">
+          <string>Фамилия (рус)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="name_lat_input_label">
+         <property name="text">
+          <string>Имя (лат)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sur_lat_input_label">
+         <property name="text">
+          <string>Фамилия (лат)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="birth_input_label">
+         <property name="text">
+          <string>Дата рождения</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="civil_input_label">
+         <property name="text">
+          <string>Гражданство</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="pass_input_label">
+         <property name="text">
+          <string>Номер паспорта</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="number_input_label">
+         <property name="text">
+          <string>Личный номер</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="auto_input_label">
+         <property name="text">
+          <string>Номер авто</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>20</y>
+        <width>261</width>
+        <height>275</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="name_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="sur_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="name_lat_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="sur_lat_input"/>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="birth_input"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="civil_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="pass_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="number_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="number_auto_input"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="info_input_group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>411</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Информация о задержании</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>191</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="info_date_input_label">
+         <property name="text">
+          <string>Дата задержания</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="info_country_input_label">
+         <property name="text">
+          <string>Сопредельное государство</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="info_dir_input_label">
+         <property name="text">
+          <string>Направление</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="info_ppr_input_label">
+         <property name="text">
+          <string>Пункт пропуска</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="info_who_input_label">
+         <property name="text">
+          <string>Ведомство</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>20</y>
+        <width>201</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="info_dir_input">
+       <item>
+        <widget class="QDateEdit" name="info_date_input"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="info_country_input"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="dir_group_input">
+         <item>
+          <widget class="QRadioButton" name="info_dir_input_in">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Въезд</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="info_dir_input_out">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Выезд</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QComboBox" name="info_ppr_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="info_who_input"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="tmc_input_group">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>10</y>
+       <width>331</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Информация о ТМЦ</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>91</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="tmc_label_group_input">
+       <item>
+        <widget class="QLabel" name="sort_input_label">
+         <property name="text">
+          <string>Вид</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="quant_input_label">
+         <property name="text">
+          <string>Количество</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="price_input_label">
+         <property name="text">
+          <string>Стоимость</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>131</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="tmc_group_input">
+       <item>
+        <widget class="QComboBox" name="sort_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="quant_input"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="price_input"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>78</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="tmc_select_group_input">
+       <item>
+        <widget class="QComboBox" name="quant_input_select"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="price_input_select"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="fab_input_group">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>140</y>
+       <width>331</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Описание правонарушения</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QPlainTextEdit" name="fab_input_text">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>311</width>
+        <height>381</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="input_write">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>504</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Записать</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="input_reset">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>504</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Очистить</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="intput_progressBar">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>543</y>
+       <width>411</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_output">
+    <attribute name="title">
+     <string>Найти информацию</string>
+    </attribute>
+    <widget class="QGroupBox" name="pers_output_group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>331</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Искать по фамилии</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="sur_output_label">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Фамилия (рус)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sur_lat_output_label">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Фамилия (лат)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>161</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="sur_output"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="sur_lat_output"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="output_data_group">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>10</y>
+       <width>421</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Полученные данные</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="output_data_total_group">
+       <item>
+        <widget class="QLabel" name="output_data_total_label">
+         <property name="text">
+          <string>Всего найдено лиц:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="output_data_total"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="output_data_sur_label">
+         <property name="text">
+          <string>Выбрать по фамилии</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="output_data_sur"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPlainTextEdit" name="output_data_text">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>401</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="output_find_ppr">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>417</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Найти</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="output_progressBar">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>543</y>
+       <width>331</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="pers_output_group_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>331</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Искать по номеру паспорта или автомобиля</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>143</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_12">
+       <item>
+        <widget class="QLabel" name="pass_output_label">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Номер паспорта</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="auto_output_label">
+         <property name="text">
+          <string>Номер авто</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_13">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>161</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_13">
+       <item>
+        <widget class="QLineEdit" name="pass_output"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="auto_output"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="output_reset_ppr">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>417</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Очистить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="output_find_sur">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>98</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Найти</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="output_reset_sur">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>98</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Очистить</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>123</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="output_find_num">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>228</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Найти</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="output_reset_num">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>228</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Очистить</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>253</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="info_output_group_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>331</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Искать по информации о задержании</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_21">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>141</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_14">
+       <item>
+        <widget class="QLabel" name="info_date_output_label">
+         <property name="text">
+          <string>Дата задержания</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="info_dir_output_label">
+         <property name="text">
+          <string>Направление</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="info_ppr_output_label">
+         <property name="text">
+          <string>Пункт пропуска</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_22">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>54</y>
+        <width>161</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_15">
+       <item>
+        <layout class="QHBoxLayout" name="dir_group_output_2">
+         <item>
+          <widget class="QRadioButton" name="info_dir_output_in">
+           <property name="text">
+            <string>Въезд</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="info_dir_output_out">
+           <property name="text">
+            <string>Выезд</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QComboBox" name="info_ppr_output"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QDateEdit" name="info_date_output">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>21</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>443</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>532</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="output_find_all">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>460</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Найти всех</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="output_reset_output">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>500</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Очистить поле</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="output_export">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>460</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Экспорт в Word</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="output_export_pdf">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>500</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Экспорт в PDF</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>450</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_edit">
+    <attribute name="title">
+     <string>Редактировать данные</string>
+    </attribute>
+    <widget class="QGroupBox" name="pers_edit_group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>411</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Личные данные</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_120">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>130</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_92">
+       <item>
+        <widget class="QLabel" name="name_edit_label">
+         <property name="text">
+          <string>Имя (рус)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sur_edit_label">
+         <property name="text">
+          <string>Фамилия (рус)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="name_lat_edit_label">
+         <property name="text">
+          <string>Имя (лат)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sur_lat_edit_label">
+         <property name="text">
+          <string>Фамилия (лат)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="birth_edit_label">
+         <property name="text">
+          <string>Дата рождения</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="civil_edit_label">
+         <property name="text">
+          <string>Гражданство</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="pass_edit_label">
+         <property name="text">
+          <string>Номер паспорта</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="number_edit_label">
+         <property name="text">
+          <string>Личный номер</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="auto_edit_label">
+         <property name="text">
+          <string>Номер авто</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_121">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>20</y>
+        <width>261</width>
+        <height>275</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_93">
+       <item>
+        <widget class="QLineEdit" name="name_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="sur_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="name_lat_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="sur_lat_edit"/>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="birth_edit"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="civil_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="pass_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="number_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="number_auto_edit"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="info_edit_group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>411</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Информация о задержании</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_122">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>191</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_94">
+       <item>
+        <widget class="QLabel" name="info_date_edit_label">
+         <property name="text">
+          <string>Дата задержания</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="info_country_edit_label">
+         <property name="text">
+          <string>Сопредельное государство</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="info_dir_edit_label">
+         <property name="text">
+          <string>Направление</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="info_ppr_edit_label">
+         <property name="text">
+          <string>Пункт пропуска</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="info_who_edit_label">
+         <property name="text">
+          <string>Ведомство</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_123">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>20</y>
+        <width>201</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="info_dir_input_8">
+       <item>
+        <widget class="QDateEdit" name="info_date_edit"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="info_country_edit"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="dir_group_input_8">
+         <item>
+          <widget class="QRadioButton" name="info_dir_edit_in">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Въезд</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="info_dir_edit_out">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Выезд</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QComboBox" name="info_ppr_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="info_who_edit"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="edit_reset">
+     <property name="geometry">
+      <rect>
+       <x>141</x>
+       <y>504</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Очистить</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="edit_progressBar">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>543</y>
+       <width>411</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="edit_write">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>504</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Обновить</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="tmc_edit_group">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>10</y>
+       <width>331</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Информация о ТМЦ</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>91</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="tmc_label_group_input_2">
+       <item>
+        <widget class="QLabel" name="sort_edit_label">
+         <property name="text">
+          <string>Вид</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="quant_edit_label">
+         <property name="text">
+          <string>Количество</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="price_edit_label">
+         <property name="text">
+          <string>Стоимость</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_19">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>131</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="tmc_group_input_2">
+       <item>
+        <widget class="QComboBox" name="sort_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="quant_edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="price_edit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_20">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>78</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="tmc_select_group_input_2">
+       <item>
+        <widget class="QComboBox" name="quant_edit_select"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="price_edit_select"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="fab_edit_group">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>140</y>
+       <width>331</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Описание правонарушения</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QPlainTextEdit" name="fab_edit_text">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>311</width>
+        <height>381</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="edit_delete">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>504</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Удалить запись</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_admin">
+    <attribute name="title">
+     <string>Панель администратора</string>
+    </attribute>
+    <widget class="QGroupBox" name="admin_new_group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>451</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Добавление пользователя</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>171</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="admin_new_name_label">
+         <property name="text">
+          <string>Ввести логин</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="admin_new_pass_label">
+         <property name="text">
+          <string>Ввести пароль</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="admin_new_conf_pass_label">
+         <property name="text">
+          <string>Подтвердить пароль</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_15">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>20</y>
+        <width>241</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLineEdit" name="admin_new_name"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="admin_new_pass"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="admin_new_conf_pass"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="admin_new_write">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="admin_new_reset">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>180</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Очистить форму</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="add_user_status_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="admin_del_user_group">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>10</y>
+       <width>281</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Удаление пользователя</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="admin_del_user_label">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Выбрать пользователя</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="admin_del_user_select"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="admin_del_user">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Удалить пользователя</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="admin_del_user_pass_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ввести пароль администратора:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="admin_del_user_pass_text">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="del_user_status_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="admin_chahge_pass_group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>290</y>
+       <width>451</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Смена пароля</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="chahge_pass_sel_user_label">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Выбрать пользователя</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="admin_del_user_select_2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="chahge_pass_user">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>26</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Сменить пароль</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>171</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="chahge_pass_sel_user_old_label">
+         <property name="text">
+          <string>Ввести старый пароль</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="chahge_pass_sel_user_new_label">
+         <property name="text">
+          <string>Ввести новый пароль</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="chahge_pass_sel_user_conf_label">
+         <property name="text">
+          <string>Подтвердить пароль</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_17">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>70</y>
+        <width>241</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLineEdit" name="chahge_pass_sel_user_old"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="chahge_pass_sel_user_new"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="chahge_pass_sel_user_conf"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="change_pass_status_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_about">
+    <attribute name="title">
+     <string>О программе</string>
+    </attribute>
+    <widget class="QLabel" name="about_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>13</y>
+       <width>351</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="about_label_3">
+     <property name="geometry">
+      <rect>
+       <x>413</x>
+       <y>10</y>
+       <width>351</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="about_label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>351</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
