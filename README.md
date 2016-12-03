@@ -6,8 +6,8 @@ for keeping stats of border crossing for government agencies. It has a russian l
 interface, and I am not planning to internalizate it.
 
 Installing:
-  - launch create_database.py
-  - launch insert_admin.py
+  - launch create_database.py (this will create SQLite persona.db file)
+  - launch insert_admin.py (this will add credits for admin)
 
 Login: admin
 
