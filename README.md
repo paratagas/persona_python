@@ -22,6 +22,8 @@ Password: 111
 
 You may change this before launching insert_admin.py
 
-Requirements: Python v3.3.5+
+Requirements:
+*Python v3.3.5+
+*PyQt v4
 
 App also has russian readme
