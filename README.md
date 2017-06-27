@@ -1,6 +1,11 @@
 # persona_python
 App for keeping stats of border crossing
 
+![Enter](http://i.imgur.com/OIT8pO5.png)
+![Fill data](http://i.imgur.com/vtRCLji.png)
+![Edit data](http://i.imgur.com/Qqc2CU6.png)
+![Admin](http://i.imgur.com/9dMorsa.png)
+
 This app was created in August 2014. This is a software written using Python, PyQt and SQLite
 for keeping stats of border crossing for government agencies. It has a russian language
 interface, and I am not planning to internalizate it.
